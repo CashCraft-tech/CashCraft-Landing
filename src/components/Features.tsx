@@ -18,23 +18,22 @@ const Features: React.FC = () => {
     {
       title: 'Smart Expense Tracking',
       description: 'Add transactions in seconds and categorize them for powerful insights.',
-      icon: <img src="/assets-web/Transactions-Mockup.png" alt="Transactions mockup" className="h-10 w-10 rounded-md object-cover" />
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M3 6a1 1 0 011-1h16a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V6zm0 5a1 1 0 011-1h16a1 1 0 011 1v7a2 2 0 01-2 2H5a2 2 0 01-2-2v-7zm2 2v5h14v-5H5z"/></svg>
+      )
     },
     {
       title: 'Budgets & Categories',
       description: 'Create custom categories and budgets. Stay on top with visual dashboards.',
-      icon: <img src="/assets-web/Dashboard-Mockup.png" alt="Dashboard mockup" className="h-10 w-10 rounded-md object-cover" />
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M4 4h16v2H4V4zm0 4h10v2H4V8zm0 4h16v2H4v-2zm0 4h10v2H4v-2z"/></svg>
+      )
     },
     {
       title: 'Real-time Notifications',
       description: 'Get push alerts for budgets and important account events.',
-      icon: <img src="/assets-web/Logo-Mockup.png" alt="Notifications icon" className="h-10 w-10 rounded-md object-cover" />
-    },
-    {
-      title: 'Secure Auth + OTP',
-      description: 'Email login with OTP verification powered by Firebase.',
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1a5 5 0 00-5 5v3H6a2 2 0 00-2 2v7a2 2 0 002 2h12a2 2 0 002-2v-7a2 2 0 00-2-2h-1V6a5 5 0 00-5-5zm-3 8V6a3 3 0 116 0v3H9z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22a2 2 0 002-2H10a2 2 0 002 2zm6-6V11c0-3.07-1.63-5.64-4.5-6.32V4a1.5 1.5 0 00-3 0v.68C7.63 5.36 6 7.92 6 11v5l-1.29 1.29A1 1 0 006 19h12a1 1 0 00.71-1.71L18 16z"/></svg>
       )
     },
     {

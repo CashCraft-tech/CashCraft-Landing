@@ -2,7 +2,7 @@ import React from 'react';
 import Reveal from './Reveal';
 const Hero: React.FC = () => {
   return (
-    <section id="home" className="relative w-full overflow-hidden bg-app bg-aurora">
+    <section id="home" className="relative  h-screen overflow-hidden bg-app bg-aurora">
       <div className="absolute -left-32 -top-32 h-72 w-72 rounded-full bg-primary/10 blur-3xl" />
       <div className="absolute -right-32 -bottom-32 h-72 w-72 rounded-full bg-primary/10 blur-3xl" />
 
@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
         <div>
           <Reveal variant="fade-up">
             <h1 className="text-4xl font-extrabold tracking-tight text-ink md:text-5xl">
-              Master your money with CashCraft
+              Master your Money Management with CashCraft
             </h1>
           </Reveal>
           <Reveal delayMs={100}>
@@ -21,7 +21,8 @@ const Hero: React.FC = () => {
           <Reveal delayMs={200}>
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <a
-                href="#download"
+                href="/assets-web/CashCraft.apk"
+                download
                 className="rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-white shadow-soft hover:bg-primary-dark"
               >
                 Download on Android

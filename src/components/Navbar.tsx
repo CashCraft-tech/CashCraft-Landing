@@ -15,16 +15,16 @@ const Navbar: React.FC = () => {
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">
-          <a href="#features" className="text-sm font-medium text-ink/80 hover:text-ink">Features</a>
-          <a href="#how" className="text-sm font-medium text-ink/80 hover:text-ink">How it works</a>
-          <a href="#faq" className="text-sm font-medium text-ink/80 hover:text-ink">FAQ</a>
-          <a href="#contact" className="text-sm font-medium text-ink/80 hover:text-ink">Support</a>
+          <a href="#features" className="text-sm font-medium text-ink hover:text-ink">Features</a>
+          <a href="#how" className="text-sm font-medium text-ink hover:text-ink">How it works</a>
+          <a href="#faq" className="text-sm font-medium text-ink hover:text-ink">FAQ</a>
+          {/* <a href="#contact" className="text-sm font-medium text-ink hover:text-ink">Support</a> */}
         </nav>
 
         <div className="glass flex items-center gap-3 rounded-xl px-2 py-1">
           <a
-            href="#download"
-            className="rounded-lg border border-line-light bg-card px-4 py-2 text-sm font-semibold text-ink hover:bg-surface-light"
+                href="/assets-web/CashCraft.apk"
+                className="rounded-lg border border-line-light bg-card px-4 py-2 text-sm font-semibold text-ink hover:bg-surface-light"
           >
             Get the App
           </a>

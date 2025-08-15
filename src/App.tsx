@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -8,23 +9,36 @@ import FAQ from './components/FAQ';
 import CTA from './components/CTA';
 import FeatureShowcase from './components/FeatureShowcase';
 import Footer from './components/Footer';
+import PrivacyPolicy from './components/PrivacyPolicy';
+import TermsOfService from './components/TermsOfService';
 
 function App() {
   return (
-    <div className="bg-app text-ink">
-      <Navbar />
-   
-      <main>
-  
-        <Hero />
-        <Features />
-        <HowItWorks />
-        <FeatureShowcase />
-        <FAQ />
-   
-      </main>
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="bg-app text-ink">
+        <Navbar />
+        <main>
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  <Hero />
+                  <Features />
+                  <HowItWorks />
+                  <FeatureShowcase />
+                  <FAQ />
+               
+                </>
+              }
+            />
+            <Route path="/privacy" element={<PrivacyPolicy />} />
+            <Route path="/terms" element={<TermsOfService />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 
