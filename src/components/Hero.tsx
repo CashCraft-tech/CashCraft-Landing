@@ -2,7 +2,7 @@ import React from 'react';
 import Reveal from './Reveal';
 const Hero: React.FC = () => {
   return (
-    <section id="home" className="relative  h-screen overflow-hidden bg-app bg-aurora">
+    <section id="home" className="relative min-h-screen overflow-hidden bg-app bg-aurora">
       <div className="absolute -left-32 -top-32 h-72 w-72 rounded-full bg-primary/10 blur-3xl" />
       <div className="absolute -right-32 -bottom-32 h-72 w-72 rounded-full bg-primary/10 blur-3xl" />
 
