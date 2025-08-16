@@ -11,6 +11,7 @@ import FeatureShowcase from './components/FeatureShowcase';
 import Footer from './components/Footer';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import TermsOfService from './components/TermsOfService';
+import ContactMe from './components/ContactMe';
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
                   <HowItWorks />
                   <FeatureShowcase />
                   <FAQ />
-               
+                  <ContactMe />
                 </>
               }
             />
